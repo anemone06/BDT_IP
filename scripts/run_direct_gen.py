@@ -1,3 +1,4 @@
+# run_direct_gen.py
 import csv
 import json
 import random
@@ -16,6 +17,7 @@ from prompts import (
     get_task_instruction_code, 
 )
 import argparse
+import logging
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run direct generation for various datasets and models.")
@@ -24,7 +26,8 @@ def parse_args():
         '--dataset_name', 
         type=str, 
         required=True, 
-        choices=['gpqa', 'math500', 'aime', 'amc', 'livecode', 'nq', 'triviaqa', 'hotpotqa', '2wiki', 'musique', 'bamboogle', 'medmcqa', 'pubhealth'],
+        # 添加了新的数据集选项
+        choices=['gpqa', 'math500', 'aime', 'amc', 'livecode', 'nq', 'triviaqa', 'hotpotqa', '2wiki', 'musique', 'bamboogle', 'medmcqa', 'pubhealth', 'legal_citation', 'International', 'consumer_contracts_qa', 'abercrombie', 'function_of_decision_section', 'proa'],
         help="Name of the dataset to use."
     )
     
@@ -81,8 +84,24 @@ def parse_args():
     parser.add_argument(
         '--max_tokens', 
         type=int, 
+        # 默认值与 run_search_o1.py 保持一致
         default=32768, 
         help="Maximum number of tokens to generate. If not set, defaults based on the model and dataset."
+    )
+
+    # 添加了 start_index 和 end_index 参数，与 run_search_o1.py 保持一致
+    parser.add_argument(
+        '--start_index',
+        type=int,
+        default=None,
+        help="Start index for processing subset of data."
+    )
+    
+    parser.add_argument(
+        '--end_index',
+        type=int,
+        default=None,
+        help="End index for processing subset of data."
     )
     
     return parser.parse_args()
@@ -90,6 +109,14 @@ def parse_args():
 def main():
     args = parse_args()
     
+    # 与 run_search_o1.py 一样设置日志
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    logger = logging.getLogger(__name__)
+
     dataset_name = args.dataset_name
     split = args.split
     subset_num = args.subset_num
@@ -100,51 +127,41 @@ def main():
     repetition_penalty = args.repetition_penalty
     max_tokens = args.max_tokens
     
-    # Set default repetition_penalty if not provided
+    # 更新了 repetition_penalty 的默认值逻辑，与 run_search_o1.py 保持一致
     if repetition_penalty is None:
-        repetition_penalty = 1.05 if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower() else 1.0
+        repetition_penalty = 1.05 if 'qwq' in model_path.lower() else 1.0
     
-    # Paths to datasets
-    if dataset_name == 'math500':
-        data_path = f'./data/MATH500/{split}.json'
-    elif dataset_name == 'gpqa':
-        data_path = f'./data/GPQA/{split}.json'
-    elif dataset_name == 'aime':
-        data_path = f'./data/AIME/{split}.json'
-    elif dataset_name == 'amc':
-        data_path = f'./data/AMC/{split}.json'
-    elif dataset_name == 'livecode':
+    # 更新了数据路径逻辑，以支持新数据集
+    if dataset_name == 'livecode':
         data_path = f'./data/LiveCodeBench/{split}.json'
-    elif dataset_name in ['nq', 'triviaqa', 'hotpotqa', 'musique', 'bamboogle', '2wiki', 'medmcqa', 'pubhealth']:
-        data_path = f'./data/QA_Datasets/{dataset_name}.json'
+    elif dataset_name in ['math500', 'gpqa', 'aime', 'amc']:
+        data_path = f'./data/{dataset_name.upper()}/{split}.json'
+    elif dataset_name.startswith('legalbench') or dataset_name in ['legal_citation', 'International', 'consumer_contracts_qa', 'abercrombie', 'function_of_decision_section', 'proa']:
+        data_path = f'./data/{dataset_name}_{split}.json'
     else:
-        raise ValueError(f"Unsupported dataset_name: {dataset_name}")
+        data_path = f'./data/QA_Datasets/{dataset_name}.json'
     
-    # Load the model
+    logger.info('-----------------------')
+    logger.info(f'Using {dataset_name} {split} set from {data_path}.')
+    logger.info('-----------------------')
+
+    # 加载模型
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = 'left'
     
+    # 更新了 model_short_name 和 output_dir 的逻辑，与 run_search_o1.py 保持一致
     if 'qwq' in model_path.lower():
         model_short_name = 'qwq'
-    elif 'deepseek' in model_path.lower():
-        if 'llama-8b' in model_path.lower():
-            model_short_name = 'ds-llama-8b'
-        elif 'qwen-7b' in model_path.lower():
-            model_short_name = 'ds-qwen-7b'
-        elif 'qwen-32b' in model_path.lower():
-            model_short_name = 'ds-qwen-32b'
-    elif 'sky-t1' in model_path.lower():
-        model_short_name = 'sky-t1'
     else:
         model_short_name = model_path.split('/')[-1].lower().replace('-instruct', '')
 
-    if model_short_name in ['qwq', 'ds-llama-8b', 'ds-qwen-7b', 'ds-qwen-32b', 'sky-t1']:
-        if dataset_name in ['math500', 'gpqa', 'aime', 'amc', 'livecode']:
-            output_dir = f'./outputs/{dataset_name}.{model_short_name}.direct'
+    if 'qwq' in model_path.lower():
+        if dataset_name in ['math500', 'gpqa', 'aime', 'amc', 'livecode'] or dataset_name.startswith('legal'):
+            output_dir = f'./outputs/{dataset_name}.qwq.direct'
         else:
-            output_dir = f'./outputs/runs.qa/{dataset_name}.{model_short_name}.direct'
+            output_dir = f'./outputs/runs.qa/{dataset_name}.qwq.direct'
     else:
         output_dir = f'./outputs/runs.baselines/{dataset_name}.{model_short_name}.direct'
     os.makedirs(output_dir, exist_ok=True)
@@ -155,28 +172,35 @@ def main():
         gpu_memory_utilization=0.95,
     )
     
-    # Load data
+    # 加载数据
     with open(data_path, mode='r', encoding='utf-8') as json_file:
         filtered_data = json.load(json_file)
     
-    # prepare input
+    # 更新了数据切片逻辑，优先使用 start/end index
+    if args.start_index is not None and args.end_index is not None:
+        filtered_data = filtered_data[args.start_index:args.end_index]
+    elif subset_num != -1:
+        filtered_data = filtered_data[:subset_num]
+
+    # 准备输入
     input_list = []
     for item in filtered_data:
         question = item['Question']
+        # 更新了 prompt 选择逻辑，以支持新数据集
         if dataset_name in ['nq', 'triviaqa', 'hotpotqa', 'musique', 'bamboogle', '2wiki']:
-            if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower():
+            if 'qwq' in model_path.lower():
                 user_prompt = get_task_instruction_openqa(question, model_name='qwq')
             else:
                 user_prompt = get_task_instruction_openqa(question)
 
         elif dataset_name in ['math500', 'aime', 'amc']:
-            if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower():
+            if 'qwq' in model_path.lower():
                 user_prompt = get_task_instruction_math(question, model_name='qwq')
             else:
                 user_prompt = get_task_instruction_math(question)
 
-        elif dataset_name in ['gpqa']:
-            if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower():
+        elif dataset_name in ['gpqa', 'medmcqa', 'pubhealth', 'International', 'consumer_contracts_qa', 'abercrombie', 'function_of_decision_section', 'proa']:
+            if 'qwq' in model_path.lower():
                 user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
             elif 'llama' in model_path.lower():
                 user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
@@ -185,32 +209,37 @@ def main():
             
         elif dataset_name == 'livecode':
             question_title = item.get('question_title', '')
-            if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower():
+            if 'qwq' in model_path.lower():
                 user_prompt = get_task_instruction_code(question, question_title=question_title, model_name='qwq')
             else:
                 user_prompt = get_task_instruction_code(question)
+        
+        elif dataset_name == 'legal_citation':
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_openqa(question, model_name='qwq')
+            else:
+                user_prompt = get_task_instruction_openqa(question)
+
         else:
-            user_prompt = ""  # Default to empty if dataset not matched
+            # 为未匹配的数据集提供默认值
+            logger.warning(f"No specific prompt instruction for dataset {dataset_name}. Using a generic prompt.")
+            user_prompt = question
+            
         prompt = [{"role": "user", "content": user_prompt}]
         prompt = tokenizer.apply_chat_template(prompt, tokenize=False, add_generation_prompt=True)
         input_list.append(prompt)
     
-    if subset_num != -1:
-        input_list = input_list[:subset_num]
-        filtered_data = filtered_data[:subset_num]
-    
-    # Set default max_tokens if not provided
-    if max_tokens is None:
-        if 'qwq' in model_path.lower() or 'deepseek' in model_path.lower() or 'sky-t1' in model_path.lower():
-            if dataset_name in ['aime', 'amc', 'livecode']:
-                max_tokens = 32768
-            else:
-                max_tokens = 25600
+    # 更新了 max_tokens 的默认值设置逻辑，与 run_search_o1.py 保持一致
+    if 'qwq' in model_path.lower():
+        if dataset_name in ['aime', 'amc', 'livecode']:
+            max_tokens = 32768
         else:
-            max_tokens = 3096
+            max_tokens = 20480
+    else:
+        max_tokens = 8192
     
     t_start = time.time()
-    # Generate model outputs
+    # 生成模型输出
     output_list = llm.generate(
         input_list, 
         sampling_params=SamplingParams(
@@ -223,7 +252,7 @@ def main():
     )
     total_time = time.time() - t_start
     
-    # Run evaluation
+    # 运行评估
     run_evaluation(
         filtered_data, 
         input_list, 
@@ -233,6 +262,8 @@ def main():
         total_time, 
         split,
     )
+    
+    logger.info(f"Evaluation completed. Results saved to {output_dir}")
 
 if __name__ == "__main__":
     main()

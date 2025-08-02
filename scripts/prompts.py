@@ -1,4 +1,180 @@
+import re
 
+def get_proa_search_o1_instruction(MAX_SEARCH_LIMIT):
+
+    return (
+
+        "You are a reasoning assistant tasked with answering questions related to professional responsibility for attorneys, based on the LegalBench PROA task. You have the ability to perform web searches to help you answer the user's question accurately. You have special tools:\n\n"
+
+        "- To perform a search: write <|begin_search_query|> your query here <|end_search_query|>.\n"
+
+        "Then, the system will search and analyze relevant web pages, then provide you with helpful information in the format <|begin_search_result|> ...search results... <|end_search_result|>.\n\n"
+
+        f"You can repeat the search process multiple times if necessary. The maximum number of search attempts is limited to {MAX_SEARCH_LIMIT}.\n\n"
+
+        "Once you have all the information you need, continue your reasoning to provide a clear and accurate answer regarding attorney professional responsibility, considering relevant legal ethics rules, such as those from the ABA Model Rules of Professional Conduct or jurisdiction-specific guidelines.\n\n"
+
+        "Example:\n"
+
+        "Question: \"Can an attorney represent a client if they have a conflict of interest due to prior representation of an opposing party?\"\n"
+
+        "Assistant thinking steps:\n"
+
+        "- I need to check the rules on conflicts of interest for attorneys, likely referencing the ABA Model Rules or relevant state bar guidelines.\n\n"
+
+        "Assistant:\n"
+
+        "<|begin_search_query|>ABA Model Rules conflict of interest attorney prior representation<|end_search_query|>\n\n"
+
+        "(System returns processed information from relevant web pages)\n\n"
+
+        "Assistant continues reasoning with the new information...\n\n"
+
+        "Remember:\n"
+
+        "- Use <|begin_search_query|> to request a web search and end with <|end_search_query|>.\n"
+
+        "- When done searching, continue your reasoning to provide a precise answer tailored to the professional responsibility issue.\n\n"
+
+    )
+
+def get_function_of_decision_section_search_o1_instruction(MAX_SEARCH_LIMIT):
+    return (        
+        "You are a reasoning assistant, able to perform web searches to help you answer the user's question accurately. \n\n"
+        "You have special tools: - To perform a search: write <|begin_search_query|> your query here <|end_search_query|>. Then, the system will search and analyze relevant web pages, then provide you with helpful information in the format <|begin_search_result|> ...search results... <|end_search_result|>.\n\n "
+        f"You can repeat the search process multiple times if necessary. The maximum number of search attempts is limited to {MAX_SEARCH_LIMIT}.\n\n"        
+        "Once you have all the information you need, continue your reasoning to classify the paragraph. \n\n"
+        "Example: \n\n"
+        "Question: Paragraph: 'The plaintiff filed a complaint on January 15, 2020, alleging breach of contract. The defendant moved to dismiss on March 10, 2020.' Classify the function of this decision section according to the standard categories.\n\n" 
+        "Assistant thinking steps: I need to classify the paragraph from a judicial decision using the standard categories: Facts, Procedural History, Issue, Rule, Analysis, Conclusion, Decree. First, I need to understand the legal definitions of these categories. I determine that the existing information is insufficient for an accurate classification, so I will initiate a search to supplement the necessary information, specifically regarding the detailed definitions of the functions of decision sections. Then, I will analyze the paragraph to determine the correct classification. \n\n"
+        "Assistant: <|begin_search_query|>functions of judicial decision sections definitions Procedural History<|end_search_query|> \n\n"
+        "(System returns processed information from relevant web pages, detailing the definitions of Facts, Procedural History, Issue, Rule, Analysis, Conclusion, and Decree) \n\n"
+        "The assistant continues to reason with the new information to determine the final classification... \n\n"
+        "Remember: - Use <|begin_search_query|> to request a web search and end with <|end_search_query|>. - Your goal is to classify the given paragraph into one of the following categories: Facts, Procedural History, Issue, Rule, Analysis, Conclusion, or Decree. - After completing the search, continue your reasoning to provide the final classification. - If all your search attempts fail to return helpful information, explicitly state that you are relying on your internal knowledge to answer the question.\n\n"
+    )
+
+def get_abercrombie_search_o1_instruction(MAX_SEARCH_LIMIT):
+
+    return (
+
+        "You are a reasoning assistant tasked with classifying a trademark's strength according to the Abercrombie spectrum, which categorizes trademarks into five levels of distinctiveness: generic, descriptive, suggestive, arbitrary, and fanciful. You have the ability to perform web searches to gather relevant information to help you answer the user's question accurately. You have special tools:\n\n"
+
+        "- To perform a search: write <|begin_search_query|> your query here <|end_search_query|>.\n"
+
+        "Then, the system will search and analyze relevant web pages, then provide you with helpful information in the format <|begin_search_result|> ...search results... <|end_search_result|>.\n\n"
+
+        f"You can repeat the search process multiple times if necessary. The maximum number of search attempts is limited to {MAX_SEARCH_LIMIT}.\n\n"
+
+        "Once you have all the information you need, continue your reasoning and provide a clear classification of the trademark's strength along with a brief explanation.\n\n"
+
+        "Example:\n"
+
+        "Question: \"Classify the trademark 'Apple' for computers on the Abercrombie spectrum.\"\n"
+
+        "Assistant thinking steps:\n"
+
+        "- I need to determine how 'Apple' relates to computers and where it fits on the Abercrombie spectrum.\n"
+
+        "- 'Apple' does not describe computers directly, so it may be arbitrary or fanciful, but I should confirm the definition of each category.\n\n"
+
+        "Assistant:\n"
+
+        "<|begin_search_query|>Abercrombie spectrum trademark classification definitions<|end_search_query|>\n\n"
+
+        "(System returns processed information from relevant web pages)\n\n"
+
+        "Assistant continues reasoning with the new information...\n\n"
+
+        "Based on the search results, 'Apple' is an arbitrary mark because it is a common word unrelated to the product (computers). Final answer: Arbitrary.\n\n"
+
+        "Remember:\n"
+
+        "- Use <|begin_search_query|> to request a web search and end with <|end_search_query|>.\n"
+
+        "- When done searching, continue your reasoning and provide the classification (generic, descriptive, suggestive, arbitrary, or fanciful) with a brief explanation.\n\n"
+
+    )
+
+
+def get_consumer_contracts_qa_search_o1_instruction(MAX_SEARCH_LIMIT):
+    return (
+        "You are a reasoning assistant tasked with answering questions about consumer contracts based on provided documents or web information. You have special tools:\n\n"
+        "- To perform a search: write <|begin_search_query|> your query here <|end_search_query|>.\n"
+        "Then, the system will search and analyze relevant web pages, providing helpful information in the format <|begin_search_result|> ...search results... <|end_search_result|>.\n\n"
+        f"You can repeat the search process multiple times if necessary. The maximum number of search attempts is limited to {MAX_SEARCH_LIMIT}.\n\n"
+        "Once you have all the information you need, continue your reasoning to provide a clear and accurate answer to the question about the consumer contract.\n\n"
+        "Example:\n"
+        "Question: \"Does the contract allow for early termination without penalty?\"\n"
+        "Assistant thinking steps:\n"
+        "- I need to check the contract's termination clause or related policies.\n\n"
+        "Assistant:\n"
+        "<|begin_search_query|>consumer contract early termination clause<|end_search_query|>\n\n"
+        "(System returns processed information from relevant web pages or documents)\n\n"
+        "Assistant continues reasoning with the new information...\n\n"
+        "Remember:\n"
+        "- Use <|begin_search_query|> to request a web search and end with <|end_search_query|>.\n"
+        "- When done searching, provide a concise answer based on your reasoning.\n\n"
+    )
+
+
+
+def get_International_search_o1_instruction(MAX_SEARCH_LIMIT):
+    return (
+        "You are a reasoning assistant with the ability to perform web searches to help "
+        "you answer the user's question accurately. You have special tools:\n\n"
+        "- To perform a search: write <|begin_search_query|> your query here <|end_search_query|>.\n"
+        "Then, the system will search and analyze relevant web pages, then provide you with helpful information in the format <|begin_search_result|> ...search results... <|end_search_result|>.\n\n"
+        f"You can repeat the search process multiple times if necessary. The maximum number of search attempts is limited to {MAX_SEARCH_LIMIT}.\n\n"
+        "Once you have all the information you need, continue your reasoning.\n\n"
+        "Example:\n"
+        "Question: \"Consider the country of Afghanistan. Does the country permit a parent to confer his or her citizenship on a child born abroad and, if so, under which conditions?\"\n"
+        "Assistant thinking steps:\n"
+        "I need to find out Afghanistan's citizenship laws regarding children born abroad to Afghan parents. I need to identify the specific conditions under which this citizenship can be conferred, if permitted.\n\n"
+        "Assistant:\n"
+        "<|begin_search_query|>Afghanistan citizenship laws parent conferring citizenship child born abroad conditions<|end_search_query|>\n\n"
+        "(System returns processed information from relevant web pages)\n\n"
+        "Assistant continues reasoning with the new information...\n\n"
+        "Remember:\n"
+        "- Use <|begin_search_query|> to request a web search and end with <|end_search_query|>.\n"
+        "- When done searching, continue your reasoning.\n\n"
+        "- If all your search attempts fail to return helpful information, explicitly state that you are relying on your internal knowledge to answer the question."
+    )
+
+
+def get_legal_citation_search_o1_instruction(max_search_limit: int):
+    return (
+        "You are a legal reasoning assistant who MUST perform web searches before giving a legal citation.\n\n"
+        "🔎  **How to search**\n"
+        f"- Write { '<|begin_search_query|>' } your query { '<|end_search_query|>' } (max {max_search_limit} searches).\n"
+        "- If the question quotes language in quotation marks, your **first search must be that exact phrase in quotes**.\n"
+        "- You must issue **at least one search** before answering.\n\n"
+        "🎯  **Your objectives**\n"
+        "1. Cite the controlling, binding precedent from the relevant court (e.g., Federal Circuit, Sixth Circuit).\n"
+        "2. Output the final answer on a single line in the form:\n"
+        "   \\boxed{Official Case Name, Reporter Volume Reporter Page (Year)}\n"
+        "   *Do not add the word “Citation:” or any other text on that line.*\n"
+        "3. If a rule was created by Case A but modified by Case B, cite Case B and briefly note A→B in your reasoning.\n\n"
+        "❗  **Do NOT rely on memory alone.  Always confirm with a search.  Do NOT fabricate citations.**\n\n"
+        "———  Example 1  ———\n"
+        "Question: (Text: Claim construction requires determining how a skilled artisan would understand a claim term …)\n"
+        "Circuit: Federal Circuit\n\n"
+        "Assistant’s thinking steps:\n"
+        "- I will search the quoted sentence.\n"
+        f"{ '<|begin_search_query|>' }\"in the context of the entire patent\" Federal Circuit{ '<|end_search_query|>' }\n"
+        "(system returns results containing *Phillips v. AWH*)\n"
+        "- *Phillips v. AWH Corp.*, 415 F.3d 1303 (Fed. Cir. 2005) is the controlling case.\n\n"
+        "Final answer:\n"
+        "\\boxed{Phillips v. AWH Corp., 415 F.3d 1303 (Fed. Cir. 2005)}\n\n"
+        "———  Example 2  ———\n"
+        "Question: (Text: … review claim construction based on intrinsic evidence de novo …)\n"
+        "Circuit: Federal Circuit\n\n"
+        "Assistant (search):\n"
+        f"{ '<|begin_search_query|>' }\"intrinsic evidence\" \"de novo\" \"clear error\" Teva Federal Circuit{ '<|end_search_query|>' }\n"
+        "→ results show *Teva Pharm. USA, Inc. v. Sandoz, Inc.*, 574 U.S. 318 (2015).\n"
+        "Final answer:\n"
+        "\\boxed{Teva Pharmaceuticals USA, Inc. v. Sandoz, Inc., 574 U.S. 318 (2015)}\n\n"
+        "Remember: search first, reason second, cite once, output only the boxed line."
+    )
 
 def get_gpqa_search_o1_instruction(MAX_SEARCH_LIMIT):
     return (
@@ -69,26 +245,38 @@ def get_code_search_o1_instruction(MAX_SEARCH_LIMIT):
 def get_webpage_to_reasonchain_instruction(prev_reasoning, search_query, document):
     return f"""**Task Instruction:**
 
-You are tasked with reading and analyzing web pages based on the following inputs: **Previous Reasoning Steps**, **Current Search Query**, and **Searched Web Pages**. Your objective is to extract relevant and helpful information for **Current Search Query** from the **Searched Web Pages** and seamlessly integrate this information into the **Previous Reasoning Steps** to continue reasoning for the original question.
+You are an expert evaluator. Your task is to analyze web pages and determine if they contain information that helps answer a question, based on the reasoning steps so far.
 
-**Guidelines:**
+**Evaluation Guidelines:**
 
-1. **Analyze the Searched Web Pages:**
-- Carefully review the content of each searched web page.
-- Identify factual information that is relevant to the **Current Search Query** and can aid in the reasoning process for the original question.
+1.  **Direct Answer:** Does any web page directly answer the **Current Search Query**? (e.g., "Yes, Afghanistan grants citizenship by birth" or "No, it does not.")
 
-2. **Extract Relevant Information:**
-- Select the information from the Searched Web Pages that directly contributes to advancing the **Previous Reasoning Steps**.
-- Ensure that the extracted information is accurate and relevant.
+2.  **Strongly Relevant Clue:** If there is no direct answer, does any web page provide information that **logically implies** an answer or **significantly narrows down the possibilities**? This includes:
+    *   Information about the underlying principles (e.g., "The law is based on jus sanguinis/right of blood").
+    *   Descriptions of necessary conditions that contradict the query (e.g., "Citizenship requires at least one parent to be a citizen").
+    *   Contrasting information (e.g., "Unlike the USA, Afghanistan does not grant citizenship based on birthplace").
 
-3. **Output Format:**
-- **If the web pages provide helpful information for current search query:** Present the information beginning with `**Final Information**` as shown below.
+3.  **Weakly Relevant Information:** Does any web page provide background context that is related but does not directly help answer the query? (e.g., general history of the law, unrelated clauses).
+
+4.  **No Helpful Information:** The web pages contain no information relevant to the query.
+
+**Output Format:**
+
+Based on your analysis, provide your output in one of the following formats.
+
+- **If the web pages contain a Direct Answer or a Strongly Relevant Clue:**
+    - Start with `**Final Information**`.
+    - **Summarize the key findings** that directly help continue the reasoning.
+    - **Quote the most important sentence(s)** from the web pages that support your summary.
+
+**Example for Strongly Relevant Clue:**
 **Final Information**
 
-[Helpful information]
+The web pages indicate that Afghan nationality law is based on the principle of *jus sanguinis* (right of blood), meaning citizenship is determined by the parents' nationality, not the place of birth. This strongly suggests that birth in the territory alone is not sufficient.
 
-- **If the web pages do not provide any helpful information for current search query:** Output the following text.
+Supporting Quote: "Afghan nationality is typically obtained under the principal of jus sanguinis, ie by birth to parents with Afghan nationality."
 
+- **If the web pages only contain Weakly Relevant Information or No Helpful Information:**
 **Final Information**
 
 No helpful information found.
@@ -103,9 +291,8 @@ No helpful information found.
 - **Searched Web Pages:**  
 {document}
 
-Now you should analyze each web page and find helpful information based on the current search query "{search_query}" and previous reasoning steps.
+Now, perform your evaluation based on the guidelines above.
 """
-
 
 def get_singleqa_search_o1_instruction(MAX_SEARCH_LIMIT):
     return (
@@ -387,20 +574,20 @@ def get_task_instruction_math(question, model_name=None):
 def get_task_instruction_multi_choice(question, model_name=None):
     if model_name == 'qwq':
         user_prompt = (
-            'Please answer the following multiple-choice question. '
-            'You should provide your final choice in the format \\boxed{YOUR_CHOICE}.\n\n'
+            'Please answer the following multiple-choice question. You should think step by step to solve it.\n\n'
+            'Provide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\n'
             f'Question:\n{question}\n\n'
         )
     elif model_name == 'llama':
         user_prompt = (
             'Please answer the following multiple-choice question. You should think step by step to solve it.\n\n'
-            'Provide your final choice in the format \\boxed{YOUR_CHOICE}. Your final choice should be one of the letters A, B, C, or D, DO NOT include any answer content.\n\n'
+            'Provide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\n'
             f'Question:\n{question}\n\n'
         )
     else:
         user_prompt = (
             'Please answer the following multiple-choice question. You should think step by step to solve it.\n\n'
-            'Provide your final choice in the format \\boxed{YOUR_CHOICE}.\n\n'
+            'Provide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\n'
             f'Question:\n{question}\n\n'
         )
     return user_prompt

@@ -9,6 +9,7 @@ import torch
 import string
 from typing import Optional, Tuple, List, Dict
 import argparse
+import logging  # 添加这一行
 
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
@@ -34,6 +35,12 @@ from prompts import (
     get_task_instruction_math, 
     get_task_instruction_multi_choice, 
     get_task_instruction_code, 
+    get_legal_citation_search_o1_instruction,
+    get_International_search_o1_instruction,
+    get_consumer_contracts_qa_search_o1_instruction, 
+    get_abercrombie_search_o1_instruction,
+    get_function_of_decision_section_search_o1_instruction,
+    get_proa_search_o1_instruction
 )
 
 # Define special tokens
@@ -50,8 +57,7 @@ def parse_args():
         '--dataset_name',
         type=str,
         required=True,
-        choices=['gpqa', 'math500', 'aime', 'amc', 'livecode', 'nq', 'triviaqa', 'hotpotqa', '2wiki', 'musique', 'bamboogle'],
-        help="Name of the dataset to use."
+        help="The name of the dataset to use."
     )
 
     parser.add_argument(
@@ -156,25 +162,53 @@ def parse_args():
         help="Maximum number of tokens to generate. If not set, defaults based on the model and dataset."
     )
 
+    # Index range for processing subset of data
+    parser.add_argument(
+        '--start_index',
+        type=int,
+        default=None,
+        help="Start index for processing subset of data."
+    )
+    
+    parser.add_argument(
+        '--end_index',
+        type=int,
+        default=None,
+        help="End index for processing subset of data."
+    )
+
     # Bing API Configuration
     parser.add_argument(
         '--bing_subscription_key',
         type=str,
-        required=True,
+        default=None,
         help="Bing Search API subscription key."
     )
-
+    parser.add_argument(
+        "--serper_api_key",
+        type=str,
+        default=os.getenv("SERPER_API_KEY"),
+        help="Serper API key."
+    )
     parser.add_argument(
         '--bing_endpoint',
         type=str,
-        default="https://api.bing.microsoft.com/v7.0/search",
-        help="Bing Search API endpoint."
+        default='https://google.serper.dev/search',
+        help='Serper.dev Search API endpoint.'
     )
 
     return parser.parse_args()
 
 def main():
     args = parse_args()
+
+    # Setup logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    logger = logging.getLogger(__name__)
 
     # Extract arguments
     dataset_name = args.dataset_name
@@ -190,7 +224,8 @@ def main():
     top_k_sampling = args.top_k_sampling
     repetition_penalty = args.repetition_penalty
     max_tokens = args.max_tokens
-    bing_subscription_key = args.bing_subscription_key
+    # Use serper_api_key if available, otherwise fallback to bing_subscription_key
+    bing_subscription_key = args.serper_api_key if args.serper_api_key else args.bing_subscription_key
     bing_endpoint = args.bing_endpoint
     use_jina = args.use_jina
     jina_api_key = args.jina_api_key
@@ -216,6 +251,8 @@ def main():
         data_path = f'./data/LiveCodeBench/{split}.json'
     elif dataset_name in ['math500', 'gpqa', 'aime', 'amc']:
         data_path = f'./data/{dataset_name.upper()}/{split}.json'
+    elif dataset_name.startswith('legalbench'):
+        data_path = f'./data/{dataset_name}_{split}.json'
     else:
         data_path = f'./data/QA_Datasets/{dataset_name}.json'
 
@@ -279,8 +316,27 @@ def main():
     )
 
     # ---------------------- Data Loading ----------------------
-    with open(data_path, 'r', encoding='utf-8') as json_file:
-        filtered_data = json.load(json_file)
+    logger.info(f"Loading data for dataset: {args.dataset_name}")
+
+    if args.dataset_name == 'legal_citation':
+        with open(f"data/QA_Datasets/{args.dataset_name}.json") as f:
+            data = json.load(f)
+    elif args.split is not None:
+        with open(f"data/{args.dataset_name}_{args.split}.json") as f:
+            data = json.load(f)
+    else:
+        with open(f"data/{args.dataset_name}.json") as f:
+            data = json.load(f)
+
+    if args.dataset_name in ["gpqa", "math", "livecodebench", "aime"] or args.dataset_name.startswith("legalbench"):
+        if args.start_index is not None and args.end_index is not None:
+            data = data[args.start_index:args.end_index]
+    else:
+        if args.subset_num != -1:
+            data = data[:args.subset_num]
+
+    # Add this line to fix the UnboundLocalError
+    filtered_data = data
 
     # ---------------------- Batch Generation Function ----------------------
     def generate_webpage_to_reasonchain_batch(
@@ -347,13 +403,63 @@ def main():
                 user_prompt = get_task_instruction_math(question)
 
         elif dataset_name == 'gpqa':
-            instruction = get_gpqa_search_o1_instruction(MAX_SEARCH_LIMIT)
+            instruction = get_International_search_o1_instruction(MAX_SEARCH_LIMIT)
             if 'qwq' in model_path.lower():
                 user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
             elif 'llama' in model_path.lower():
                 user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
             else:
                 user_prompt = get_task_instruction_multi_choice(question)
+                
+        elif dataset_name == 'International':
+            instruction = get_International_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
+            elif 'llama' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
+            else:
+                user_prompt = get_task_instruction_multi_choice(question)
+
+        elif dataset_name == 'consumer_contracts_qa':
+            instruction = get_consumer_contracts_qa_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
+            elif 'llama' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
+            else:
+                user_prompt = get_task_instruction_multi_choice(question)
+
+        # function_of_decision_section
+
+        elif dataset_name == 'function_of_decision_section':
+            instruction = get_function_of_decision_section_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
+            elif 'llama' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
+            else:
+                user_prompt = get_task_instruction_multi_choice(question)
+
+        elif dataset_name == 'proa':
+            instruction = get_proa_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
+            elif 'llama' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
+            else:
+                user_prompt = get_task_instruction_multi_choice(question)
+
+        
+                
+        elif dataset_name == 'abercrombie':
+            instruction = get_abercrombie_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='qwq')
+            elif 'llama' in model_path.lower():
+                user_prompt = get_task_instruction_multi_choice(question, model_name='llama')
+            else:
+                user_prompt = get_task_instruction_multi_choice(question)
+
 
         elif dataset_name == 'livecode':
             instruction = get_code_search_o1_instruction(MAX_SEARCH_LIMIT)
@@ -362,7 +468,14 @@ def main():
                 user_prompt = get_task_instruction_code(question, question_title=question_title, model_name='qwq')
             else:
                 user_prompt = get_task_instruction_code(question)
+        elif dataset_name == 'legal_citation':
+            instruction = get_legal_citation_search_o1_instruction(MAX_SEARCH_LIMIT)
+            if 'qwq' in model_path.lower():
+                user_prompt = get_task_instruction_openqa(question, model_name='qwq')
+            else:
+                user_prompt = get_task_instruction_openqa(question)
         else:
+            instruction = ""  # Default instruction for unmatched datasets
             user_prompt = ""  # Default to empty if dataset not matched
 
         prompt = [{"role": "user", "content": instruction + user_prompt}]
@@ -726,4 +839,9 @@ def main():
     print("Process completed.")
 
 if __name__ == "__main__":
+    args = parse_args()
+
+    if not args.bing_subscription_key and not args.serper_api_key:
+        raise ValueError("Either --bing_subscription_key or --serper_api_key must be provided.")
+
     main()

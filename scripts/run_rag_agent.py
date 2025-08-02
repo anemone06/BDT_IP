@@ -154,15 +154,22 @@ def parse_args():
     parser.add_argument(
         '--bing_subscription_key',
         type=str,
-        required=True,
-        help="Bing Search API subscription key."
+        default=None,
+        help="Bing Search API subscription key (deprecated, use --serper_api_key instead)."
+    )
+
+    parser.add_argument(
+        '--serper_api_key',
+        type=str,
+        default=os.getenv('SERPER_API_KEY'),
+        help='Serper.dev API key.'
     )
 
     parser.add_argument(
         '--bing_endpoint',
         type=str,
-        default="https://api.bing.microsoft.com/v7.0/search",
-        help="Bing Search API endpoint."
+        default='https://google.serper.dev/search',
+        help='Serper.dev Search API endpoint.'
     )
 
     return parser.parse_args()
@@ -184,8 +191,13 @@ def main():
     top_k_sampling = args.top_k_sampling
     repetition_penalty = args.repetition_penalty
     max_tokens = args.max_tokens
-    bing_subscription_key = args.bing_subscription_key
+    # Use serper_api_key if available, otherwise fallback to bing_subscription_key  
+    bing_subscription_key = args.serper_api_key if args.serper_api_key else args.bing_subscription_key
     bing_endpoint = args.bing_endpoint
+    
+    # Validate API key
+    if not bing_subscription_key:
+        raise ValueError("Either --bing_subscription_key or --serper_api_key must be provided.")
     use_jina = args.use_jina
     jina_api_key = args.jina_api_key
 

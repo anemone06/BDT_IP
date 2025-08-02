@@ -1,0 +1,1302 @@
+[
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Section 404 of the First Step Act is similarly of no help to Lawrence's allocution argument. It says only that courts may reduce sentences for defendants convicted of certain crack offenses “on motion” of the defendant, the government, or the court “as if section 2 and 3 of the Fair Sentencing Act of 2010 were in effect at the time the covered offense was committed.” First Step Act § 404(b), 132 Stat. at 5222 (internal citation omitted). Nothing in the text or structure of Section 404, however, categorically requires that district courts provide an opportunity for the defendant to allocute before ruling on such a motion.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"That is particularly so in view of extradition's fundamentally diplomatic, executive character. “Subject to judicial determination of the applicability of the existing treaty obligation of the United States to the facts of a given case, extradition is ordinarily a matter within the exclusive purview of the Executive.” Shapiro v. Sec'y of State, 499 F.2d 527, 531 (D.C. Cir. 1974), aff'd sub nom. Comm'r v. Shapiro, 424 U.S. 614, 96 S.Ct. 1062, 47 L.Ed.2d 278 (1976). The Executive generally “conducts the procedure on behalf of the foreign sovereign,” such that the foreign state “makes no direct request of our courts” and “its contacts with the Judiciary are mediated by the executive branch.” Blaxland, 323 F.3d at 1207. Because a foreign sovereign operates at a level of remove from United States courts when it seeks our assistance in extradition, there is all the more reason to doubt that an extradition request connotes an intent to waive the requesting sovereign's immunity in our courts.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Here, Poland initially failed to respond to Khochinsky's complaint, and the Clerk of Court entered default against Poland. A few weeks later, however, Poland moved to vacate the Clerk's entry of default pursuant to Rule 55(c), which permits a court to “set aside an entry of default for good cause.” Fed. R. Civ. P. 55(c).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"On appeal, Casiano argues that his plea was invalid because he entered it without knowing that he was waiving his right to appeal the denial of his suppression motion.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 100\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The union also assails the Board's explanation that it needed a new remedy to save employers from a dilemma.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The district court granted a sentence reduction to 240 months imprisonment and three years of supervised release, but denied any further reduction in Lawrence's sentence. It ruled first that no hearing with the defendant present was required, pointing to the Supreme Court's decision in Dillon v. United States, 560 U.S. 817, 130 S.Ct. 2683, 177 L.Ed.2d 271 (2010), and Rule 43 of the Federal Rules of Criminal Procedure. On the merits, the court ruled that no reduction beyond the unopposed adjustment of the sentence down to 240 months was warranted. The court pointed to Lawrence's “long criminal history and the danger to public safety[,]” as well as his “age, risk of recidivism, and * * * long disciplinary record while incarcerated[.]” J.A. 115.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We have jurisdiction to review the Commission decision under 30 U.S.C. § 816(b). We review the Commission's legal conclusions de novo, Sec'y of Labor v. Twentymile Coal Co., 456 F.3d 151, 156 (D.C. Cir. 2006), and the Commission's factual findings under the substantial evidence standard, “meaning that we determine whether there is such relevant evidence as a reasonable mind might accept as adequate to support the judge's conclusion,” Am. Coal Co. v. Fed. Mine Safety & Health Rev. Comm'n, 796 F.3d 18, 23 (D.C. Cir. 2015) (internal quotations omitted).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We begin with Lassiter's challenge to the district judge's 2020 finding that he designed a sentencing package back in 2009. \" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"With respect to the first requirement, the exchanges argue that the three challenged plan elements “have not merely been proposed by the Commission[;]” rather, after a round of notice and comment, the Commission “ma[de] a final determination about the elements to be included in the New Consolidated Data Plan.” Pet'rs’ Suppl. Br. 2 (emphasis omitted). For its part, the Commission contends that the Governance Order represented the consummation of its decision-making process because it “determined that the challenged provisions ... are reasonable and within [the Commission's] authority.” Resp't’s Suppl. Br. 2–3.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 34\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We reached the opposite conclusion in Townsend, not least because the original total “was the result of a downward departure” on the underlying violent felonies. 178 F.3d at 569. Because “[t]he amount of downward departure allowed by a sentencing judge is inevitably affected by the total sentence imposed,” we concluded that “the departure *** imposed on the non-[§]924(c) counts was chosen in light of the [mandatory] term imposed on the § 924(c) counts.” Id. As we noted in Townsend, “[r]equiring a sentencing judge to retain the full downward departure originally allowed on a given count even when convictions on other counts are vacated could well make judges hesitant to give generous downward departures in the first instance.” Id. By extension, “where the district court is sentencing outside the guidelines range, it is particularly important that the district court have discretion to reevaluate the entire sentencing package.” Id. (quoting United States v. Watkins, 147 F.3d 1294, 1297 (11th Cir. 1998)). As then-Judge Gorsuch noted in United States v. Smith, “court after court” has concluded “that district courts may and should consider § 924(c) sentences when sentencing for related crimes.” 756 F.3d at 1188.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Buzzard and Martin argue that Dawson's question violated their Fourth Amendment rights because (1) it wasn't related to the traffic stop's mission, and (2) it unlawfully prolonged the stop. We take each argument in turn.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 198\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Third and finally, Khochinsky argues that two of his claims—the claims for First Amendment retaliation and for tortious interference with business relations—fall within the FSIA's noncommercial tort exception.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Darby argues that her liberty interest is not in obtaining discretionary relief, but in having the BIA consider the evidence she presented in her motion\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 152\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Section 160(g) is an odd starting point for oppugning the Board's new remedy. That subsection says nothing at all about remedies. And the new remedy does not “change” any liabilities or “excus[e]” any violations. Just the opposite: the Board explained that “a violation will be found for the refusal to provide information ....” J.A. 152. Appealing to generic “consequences” is no way to show that the Act forecloses a particular remedy.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Lassiter's attempt to show plain error fails twice over. First, he cannot claim that the updated PSR's factual basis for § 2A2.1(b)(1)(A) affected his sentence: elsewhere in both the original and the updated PSR, Lassiter “agreed that there was a life-threatening bodily injury,” and “therefore, four levels are added [under] USSG § 2A2.1(b)(1).” App. 537-38, 572; accord App. 280.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The appellant suggests that, under Federal Rule of Criminal Procedure 32(h), he was entitled to receive (yet did not receive) advance notice of the district court's intention to vary upward.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In 2010, Alexander Khochinsky, then a Russian foreign national living in the United States, contacted the Republic of Poland seeking restitution for the loss of his family's land during the Nazi invasion. In an effort to negotiate with Poland for the payment of restitution, Khochinsky offered a painting in his possession that he believed resembled one reported missing by Poland. Poland did not respond to the offer as Khochinsky anticipated. Instead, it sought Khochinsky's extradition from the United States on the ground that he was knowingly in possession of a stolen painting. Poland's extradition attempt ultimately failed.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"They now challenge that conclusion on appeal, arguing that the district court erred in using the instance and expense test, and, even under that test, reached the wrong conclusion. They also challenge the court's failure to strike one of the defendants' discovery responses.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Appellants argue that the District Court misapplied American Pipe, and that class members should not be forced to wait until after a certification decision to benefit from the doctrine.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 168\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Federal sentencing guidelines applicable to Lassiter's kidnapping conviction recommend sentencing ranges accounting for a defendant's criminal history and for a crime's offense level. The sentencing judge may vary from the range to guarantee a sentence “sufficient, but not greater than necessary.” See 18 U.S.C. § 3553(a)\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Rule}",
+        "Pred_Answer": "Rule",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In June 2018, Khochinsky filed suit against Poland in the United States District Court for the District of Columbia. Khochinsky claimed that Poland's unsuccessful—and, in his view, retaliatory—extradition request had caused him “substantial damage.” Compl. ¶ 115, J.A. 17. Khochinsky's complaint set out five counts against Poland: (i) a violation of his First Amendment rights by instigating a retaliatory extradition process; (ii) quiet title as to his ownership of Girl with Dove; (iii) tortious interference with his business stemming from his imprisonment and house arrest; (iv) aiding and abetting a trespass of his family land; and (v) abuse of process in connection with Poland's conduct in the extradition proceeding.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The sole and narrow question presented in this appeal is whether the law mandated that the district court provide Lawrence the opportunity to allocute—to speak in person to the district court judge—before ruling on his motion for a sentence reduction.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The United States Secretary of Labor (Secretary) petitions for review of its Federal Mine Safety and Health Review Commission's (Commission or FMSHRC) vacatur of an order (Order) issued pursuant to section 103(k) of the Federal Mine Safety and Health Act of 1977 (Mine Act), 30 U.S.C. §§ 801 et seq.1 After a miner fell ill at one of M-Class Mining's (M-Class) mines and a doctor attributed the miner's illness to carbon monoxide (CO) poisoning, a Mine Safety and Health Administration (MSHA) inspector issued the Order to close part of the mine for an investigation. After a few hours of investigation, the MSHA Inspector allowed mine operations to resume and subsequently limited the Order to a single piece of equipment. MSHA eventually terminated the modified Order but M-Class still sought vacatur, arguing MSHA had erroneously issued the Order. After an administrative law judge (ALJ) upheld the Order, the Commission vacated it, concluding substantial evidence—including information MSHA did not know at the time the Order issued—did *20 **392 not support a finding that an accident had occurred. Because the case is moot, we dismiss the petition, vacate the Commission decision and the Order consistent with Tennessee Gas Pipeline Co. v. Federal Power Commission, 606 F.2d 1373 (D.C. Cir. 1979) and A.L. Mechling Barge Lines, Inc. v. United States, 368 U.S. 324, 82 S.Ct. 337, 7 L.Ed.2d 317 (1961), and remand for proceedings consistent with this opinion.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Affirmed.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The key question is whether Donna and Hurley each “obtained, directly or indirectly” the proceeds of the conspiracy. See 18 U.S.C. § 1963(a)(3); see also Honeycutt, 137 S. Ct. at 1632.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 65\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"But nothing in those duties includes a categorical requirement that defendants, who presumptively already allocuted at their original sentencing, be afforded the opportunity to allocute again.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In a written rescript, the district court subsequently granted RTN's motion for judgment on the pleadings. See Rose v. RTN Fed. Credit Union, No. 19-cv-11854, slip op., 2019 WL 12375555 (D. Mass. Dec. 9, 2019) (unpublished). The court noted the CBA's directive that “any differences,” if not otherwise settled between RTN and Union representatives, would have to be resolved by arbitration. Id. at 2. Since the CBA's broadly worded grievance provision encompassed Rose's claims, Rose was bound to its terms. See id. at 3; see also Republic Steel Corp. v. Maddox, 379 U.S. 650, 652, 85 S.Ct. 614, 13 L.Ed.2d 580 (1965) (“[F]ederal labor policy requires that individual employees wishing to assert contract grievances must [at least] attempt use of the contract grievance procedure agreed upon by employer and union as the mode of redress.” (emphasis omitted)). And because Rose had made no attempt to arbitrate her claims, her suit could not proceed. See Rose, slip op. at 2-3.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 56\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Amidst a wave of similar state action across the country, North Carolina has enacted legislation to restrict the availability of abortions and impose heightened requirements on abortion providers and women seeking abortions. Given these facts, we cannot reasonably assume that the abortion ban that North Carolina keeps on its books is “largely symbolic.” Duling, 782 F.2d at 1207. Accordingly, we agree with the district court that the Providers have established a credible threat of prosecution and therefore have standing to bring this suit. The judgment of the district court is thus affirmed. \" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 290\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The DJA prohibits courts from providing declaratory relief with respect to federal taxes; that prohibition is jurisdictional. Because the requested relief—declaring that Rivero was not required to provide a transfer certificate to Fidelity—necessarily involves a determination with respect to federal taxes, the district court properly dismissed Rivero's action for lack of jurisdiction. AFFIRMED.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 356\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We conclude that the district court did not err when imposing Esposito's sentences, so we AFFIRM.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 489\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We now turn to the core of the case: Poland's assertion of sovereign immunity from Khochinsky's claims.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Reiterating his effort “to treat each of the defendants fairly, consistent with their involvement in the activities,” the district judge sentenced Cooper to 180 months imprisonment: 96 months for kidnapping plus 102 concurrent months for D.C. assault and 84 consecutive months for § 924(c). App. 300. Although the judge thought Cooper committed more significant conduct than Devro Hebron, the judge deemed him less culpable overall given Devro's role in planning the crime.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Khochinsky submits that the term “abuse of process” for purposes of § 1605(a)(5)(B) refers solely to abuse of judicial process, whereas extradition is a diplomatic process. But as the Ninth Circuit observed in Blaxland, a claim against a foreign state for wrongfully “invoking the extradition procedures” involves an “abuse of process” within the meaning of § 1605(a)(5)(B). Blaxland, 323 F.3d at 1204. Whether the term “abuse of process” is “defined according to a uniform federal standard or according to applicable state law”—here, District of Columbia or New York law—the term “concern[s] the wrongful use of legal process,” including an alleged effort to “misuse[ ] legal procedures to detain” or “extradite” someone. Id. at 1204, 1206; see Restatement (Second) of Torts § 682 (1977) (defining tort of abuse of process); Doe v. District of Columbia, 796 F.3d 96, 108 (D.C. Cir. 2015) (same under D.C. law); Curiano v. Suozzi, 63 N.Y.2d 113, 480 N.Y.S.2d 466, 469 N.E.2d 1324, 1326 (1984) (same under N.Y. law). And Khochinsky is wrong, moreover, insofar as he assumes that extradition is an exclusively diplomatic process, to the complete exclusion of any judicial role: while extradition, as we have explained, is fundamentally diplomatic in character, it ultimately involves the courts in some measure in its execution—as evidenced by the termination of the extradition proceedings in this case upon a judicial determination that probable cause was lacking.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We REVERSE the judgment in favor of defendants and REMAND for further proceedings. We place no limitations on how the district court should proceed or on what decisions it should make.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 378\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"On appeal, Lawrence invokes the common law and Federal Rule of Criminal Procedure 32 as sources for his asserted right to allocute. See Lawrence Br. 9–10; Reply Br. 8–9.5\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Cooper's resentencing came 134 months into his 180-month sentence. The judge noted that Cooper had served 134 months by December 2019, the month he was resentenced. The court observed that Cooper had achieved remarkable self-improvement that had rendered him “a poster child for post sentence rehabilitation.” App. 506. The judge resentenced Cooper to time served.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"That remedy is both reasonable and consistent with the Act, so we will not disturb it. See id.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Khochinsky raises one additional ground for setting aside the district court's vacatur of default: the court's decision not to enforce (or even acknowledge) Poland's failure to comply with local rules pertaining to the process for seeking vacatur of a default and to conferring with an opposing party before filing a nondispositive motion.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The judgment of the district court dismissing Desper's complaint is affirmed.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 249\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We review de novo the district court's dismissal of appellants’ complaint for lack of subject matter jurisdiction. Moore v. Frazier, 941 F.3d 717, 721 (4th Cir. 2019).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 181\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The court recognized, however, that the primary reason Hurley was facing a high offense level was “the amount of money for which [he] ha[d] been held responsible.” The Court explained that Hurley “did not have a large stake in th[at] money or the profits made from [it].” The court concluded that it was “pretty clear” that “most of that money went to one person and one person only and that was Stephen Saccoccia.”\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 65\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"An attorney's summation is not meant to be used as a device for the introduction of new facts into evidence. In this instance, the appellant complains that a portion of the prosecutor's comment — “phone records don't identify three-way phone calls” — states a fact not in evidence. The appellant's complaint is literally true: the government does not point to any competent evidence in the record verifying the asserted fact that “phone records don't identify three-way phone calls.” The ultimate test, though, is whether the error caused harm. See Berroa, 856 F.3d at 162. Here, the error was manifestly harmless. We explain briefly.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The FSIA does not specifically define what will constitute a waiver “by implication,” but our circuit has “followed the virtually unanimous precedent construing the implied waiver provision narrowly.” Creighton Ltd. v. Gov't of Qatar, 181 F.3d 118, 122 (D.C. Cir. 1999) (internal quotation marks and citation omitted). In particular, we “have held that implicit in § 1605(a)(1) is the requirement that the foreign state have intended to waive its sovereign immunity.” Id. (emphasis added); see Ivanenko v. Yanukovich, 995 F.3d 232, 239 (D.C. Cir. 2021). And as we have observed, “courts rarely find that a nation has waived its sovereign immunity ... without strong evidence that this is what the foreign state intended.” Foremost-McKesson, Inc. v. Islamic Republic of Iran, 905 F.2d 438, 444 (D.C. Cir. 1990) (quoting Frolova v. Union of Soviet Socialist Republics, 761 F.2d 370, 377 (7th Cir.1985)).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"At the disposition hearing, the district court — ruling favorably on two defense objections — rejected the proposed role-in-the-offense adjustment and deleted the criminal history point that had been assigned for the appellant's domestic violence conviction. Taking those changes into account, the court set the appellant's total offense level at 29 and placed him in CHC I.5 It proceeded to recast the GSR at 87-108 months. Neither side objected to this recasted GSR.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The judge sentenced Devon Hebron, who pled guilty to kidnapping, to 156 months imprisonment. Although the government offered Devon a cooperation agreement to further reduce his exposure, Devon refused to provide evidence incriminating his brother.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We recently rejected Stephen's attempt to apply Honeycutt retroactively to vacate the forfeiture judgment against him. Saccoccia v. United States (Stephen's Honeycutt Appeal), 955 F.3d 171 (1st Cir. 2020). We reject the efforts of Donna on essentially the same grounds applicable to Stephen. We reject the efforts of Hurley on different grounds.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 65\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The Commission and M-Class rely on our decision in Performance Coal Co. But  *25  **397 Performance Coal Co. is plainly distinguishable. In Performance Coal Co., we were asked to review a § 103(k) order that remained in effect, having been modified over sixty times, and the Secretary admitted that MSHA would likely modify the order again. 642 F.3d at 235–37. On the contrary, the M-Class Order was modified twice and terminated. Further, Performance Coal Co. involved a clear question of statutory interpretation: whether § 105(b) of the Mine Act allows an operator to seek temporary relief from a § 103(k) order. Performance Coal Co., 642 F.3d at 238–39. Granted, there is a statutory element to the issues here, but only in the context of whether, on these unusual facts, MSHA properly issued the now-terminated Order. Performance Coal Co., then, does not control and M-Class has failed to demonstrate that this case otherwise falls within the “capable of repetition but evading review” exception.9\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"So the union's statutory challenge goes nowhere.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Khochinsky's calculus changed in 2010, when he learned that a painting reported missing from Poland resembled one that he had inherited from his father. When Khochinsky's father died in 1991, Khochinsky inherited Girl with Dove, a painting by French rococo master Antoine Pesne. According to Khochinsky's father, the painting had been in Germany before he acquired it following World War II. As for the painting reported missing by Poland, it had been looted from the Wielkopolskie Museum in Poland by Nazi forces and never recovered.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In January 2018, the slot-machine technicians at Palace Station Hotel & Casino voted to organize. The National Labor Relations Board certified the International Union of Operating Engineers Local 501 to represent them, and the union asked Palace to produce documents.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Donna and Hurley contend that the Supreme Court's decision in Honeycutt v. United States, ––– U.S. ––––, 137 S. Ct. 1626, 198 L.Ed.2d 73 (2017), should be applied retroactively to invalidate the forfeiture judgments against them.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 65\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Accordingly, the judgment of the district court is affirmed. So ordered.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"On the third day of trial, the appellant — for the first time — asked the district court to excuse Juror 31. The court refused to do so. Two days later, the court revisited the matter and asked defense counsel if he wanted to say anything more about the possibility of excusing Juror 31. Counsel responded that, had he known that the AUSA “was actually participating” at the witness interview, he “would have exercised a peremptory [strike] to get rid of her.”3 The district court said that it would “think about it further.”\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"District courts have broad discretion to impose proportional sanctions. When they explain how they weigh the Poulis factors, we can confirm the reasonableness of those sanctions. Though striking Brace's summary-judgment brief was harsh, it was a reasonable response to his former counsel's persistent, extreme misconduct. We will affirm.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 145\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"This is Melvin Lawrence's third appearance before this court.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Buzzard and Martin maintain that the district court should have suppressed the guns because Officer Dawson violated their Fourth Amendment rights when he asked whether there was anything illegal in the car.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 198\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Gregory Lassiter pled guilty to multiple counts of conviction stemming from his role in a kidnapping and attempted murder. In 2009, the district court sentenced Lassiter to 324 months imprisonment. In 2020, following a change in law, the court set aside one of Lassiter's judgments and resentenced him to 300 months. Lassiter appeals, arguing that the judge wrongly treated his original sentence as a sentencing package and misapplied the sentencing guidelines. We disagree, and affirm.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"A few years later, on June 20, 1941, Maria and her grandmother took a trip that saved their lives. That day, a Friday, they traveled east to Lviv (then part of the Soviet Union) to observe the Sabbath with Maria's mother. The next day, Nazi Germany invaded the Soviet half of Przemysl, murdering Maria's relatives who had remained behind. Maria became heir to the family property in Przemysl, and that inheritance passed to Khochinsky upon his mother's death in 1989.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"For the foregoing reasons, the judgment of the district court is affirmed.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 458\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The case presents three issues: (i) whether the case is moot and, if so, whether the “capable of repetition but evading review” exception applies; (ii) how MSHA's decision to issue the Order should be reviewed and (iii) whether the Order was properly issued.5 We begin our analysis with the first issue and, accordingly, assess whether the case is moot and, if so, whether the “capable of repetition but evading review” exception applies. As the case is moot and the exception does not apply, our analysis begins and ends with the first issue.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We have previously stated that Donna “assisted her husband [Stephen] in most aspects of the [money laundering] operation.”5 Id. at 7. She “relayed his instructions to the others [involved in the conspiracy].” Id. Stephen and Donna wired over $136 million out of the jointly owned Trend account to an assortment of foreign banks.6 Defendants' Forfeiture Order, 823 F. Supp. at 999; see also Stephen's Direct Appeal, 58 F.3d at 762-63. Donna also “helped count money, [ ] personally authorized the wire transfer of more than $38 million from the Trend account to foreign bank accounts,” Appellants' Direct Appeal, 63 F.3d at 11, and “caused phony invoices to be issued,” Defendants' Forfeiture Order, 823 F. Supp. at 998.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 65\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The district court's order sufficiently addressed all permutations of Hixson's deliberate indifference claims and is therefore final. On the merits, we conclude that Hixson did not meet the relevant standards for his deliberate indifference and gross negligence claims. Therefore, we affirm the district court's grant of summary judgment.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 304\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Article III of the United States Constitution limits our review to “only actual, ongoing controversies.” J.T. v. District of Columbia, 983 F.3d 516, 522 (D.C. Cir. 2020) (quoting McBryde v. Comm. to Rev. Cir. Council Conduct, 264 F.3d 52, 55 (D.C. Cir. 2001)). We cannot decide a case “if ‘events have so transpired that the decision will neither presently affect the parties’ rights nor have a more-than-speculative *22  **394 chance of affecting them in the future.’ ” Id. (quoting Clarke v. United States, 915 F.2d 699, 701 (D.C. Cir. 1990) (en banc)).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Palace said no dice. For reasons irrelevant here, Palace believed that the union should not have been certified.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"(1) a work prepared by an employee within the scope of his or her employment; or\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Rule}",
+        "Pred_Answer": "Rule",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"M-Class operates an underground coal mine in Macedonia, Illinois. During operations to repair a gap in the mine roof, one miner experienced dizziness and a light headache that progressed into chest pains and difficulty breathing. The miner was removed from the mine and taken to a local hospital, where a physician examined him. Shortly thereafter, the physician notified the police that a miner was suffering from CO poisoning and recommended that the mine be shut down. The police called the MSHA hotline and relayed the physician's diagnosis and recommendation, which the MSHA hotline employees used to draft an escalation report.2 The report was then sent to the local MSHA office. After receiving the escalation report, the local MSHA office supervisor notified a senior M-Class official at the mine and—although the M-Class official told the MSHA supervisor that he had been working in the same area that day and that his personal gas spotter3 did not detect any elevated CO level—sent a MSHA inspector to investigate.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"It is by now apodictic that the LMRA thoroughly occupies the field of labor contract disputes. See Allis-Chalmers Corp. v. Lueck, 471 U.S. 202, 211, 105 S.Ct. 1904, 85 L.Ed.2d 206 (1985) (concluding that any “questions relating to what the parties to a labor agreement agreed, and what legal consequences were intended to flow from breaches of that agreement, must be resolved by reference to uniform federal law”). Even so, the LMRA's reach is not unlimited: “not every dispute concerning employment, or tangentially involving a provision of a collective-bargaining agreement, is preempted by [section] 301.” Id. State laws that establish substantive rights, obligations, or prohibitions independent of any labor contract do not implicate the same sort of federal questions. See id. at 211-12, 105 S.Ct. 1904. In the last analysis, LMRA preemption of a given state-law claim depends upon whether the claim's adjudication appears to be “inextricably intertwined with consideration of the terms of [a] labor contract.” Id. at 213, 105 S.Ct. 1904; see Cavallaro v. UMass Memorial Healthcare, Inc., 678 F.3d 1, 7 (1st Cir. 2012).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 56\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Indeed, the Eleventh Circuit presumes in cases involving § 924(c) “that sentences on each count of a multi-count indictment are part of a package that may, without a case specific inquiry, be revisited to ensure that the overall sentence on the surviving counts is consistent with the district court's intentions.” United States v. Fowler, 749 F.3d 1010, 1017 (11th Cir. 2014). Relatedly, though not a holding, then-Judge Gorsuch described most circuits’ “typical[ ]” conclusion that a “ ‘§ 924(c) offense and the underlying offense are interdependent and result in an aggregate sentence, not sentences which may be treated discretely.’ ” United States v. Smith, 756 F.3d 1179, 1189 (10th Cir. 2014) (quoting United States v. Mendoza, 118 F.3d 707, 710 (10th Cir. 1997) and collecting cases), cited with approval in Dean v. United States, ––– U.S. ––––, 137 S. Ct. 1170, 1176, 197 L.Ed.2d 490 (2017).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"On the night of April 6, 2019, the Metropolitan Police Department (MPD) alerted police officers Jasmine Turner and Brianna Ennis that its ShotSpotter system had identified the sound of gunshots in the 3500 block of 13th Street Southeast in Washington, D.C. Appellant's Appendix (App.) 38-39. ShotSpotter is “a surveillance network of GPS-enabled acoustic sensors” that “use[s] sophisticated microphones to record gunshots in a specific area.” United States v. Rickmon, 952 F.3d 876, 878 (7th Cir. 2020). The officers arrived on the block a minute and a half after receiving the alert from MPD. J.A. 52-53. They saw Jones walking quickly and observed that there was no one else outside on the block. App. 51, 66. While the officers checked for victims, a dispatcher reported over their radio that citizens on neighboring blocks were calling 911 to report gunshots heard at either end of the 3500 block. App. 66. The officers believed these were the same shots reported by ShotSpotter, because they had heard no additional shots since arriving on the block. App. 65-66.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 50\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The Commission and M-Class also rely on two FMSHRC decisions to support the proposition that a § 103(k) order can be modified after termination: Secretary of Labor v. Wyoming Fuel Co., 14 FMSHRC 1282, 1288–89 (1992), and Secretary of Labor v. Ten-A-Coal Co., 14 FMSHRC 1296, 1298 (1992). Wyoming Fuel Co. and Ten-A-Coal Co. indicate that a citation issued under § 104 of the Mine Act can be modified after termination, not that a § 103(k) safety order can be so modified. We agree with the Secretary that § 104 citations—and withdrawal orders—are distinguishable from § 103(k) safety orders. Pet'r’s Suppl. Br. 3–5. Termination of a § 104(a) citation signifies that the violative condition has abated and that the mine operator is no longer subject to a § 104(b) withdrawal order for failure to abate but “not that the citation itself no longer exists for other legal purposes ... [such as] subsequent contest and civil penalty proceedings.” Wyoming Fuel Co., 14 FMSHRC at 1288. There are no analogous citations or penalty proceedings under § 103(k). The functional difference between termination and vacatur in the context of a § 104 citation does not mean a terminated § 103(k) safety order—rather than a vacated § 103(k) safety order—threatens non-speculative legal consequences for the mine operator. Neither the Commission nor M-Class has identified any statutory basis for conversion of a § 103(k) safety order to a § 104 citation or withdrawal order.7 That MSHA—while investigating  *24  **396 an accident after issuing a § 103(k) safety order—could note a health or safety violation and issue a citation under § 104 does not mean that a terminated § 103(k) safety order can serve as the basis for a later citation or be modified after termination.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In 2008, Gregory Lassiter plotted with Devro Hebron to rob and kill businessman Gregory Lyles. Hebron obtained a pistol and recruited his brother Devon Hebron, Darrin McCauley, David Cooper, and Ryan Wheeler to help. The six men lured Lyles from his business to a townhome, where they beat and bound him. They then used his truck to drive him to a field, where they intended to kill him. McCauley started out driving Lyles's truck, but got cold feet and fled. Cooper took over the driving of the truck. Devon Hebron followed in his van.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Nothing in 18 U.S.C. § 3582(c)(1)(B) provides a categorical right to allocution either. As relevant here, that provision states simply that a court “may modify an imposed term of imprisonment to the extent otherwise expressly permitted by statute[.]” Id. On its face, all this provision does is reconcile sentence modification statutes like the First Step Act with the criminal law's general rule of sentence finality.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 40\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"For the reasons provided, we deny the petition for review and grant the cross-petition for enforcement as to the partial implementation of the last, best and final offer without reaching a good faith impasse and locking out Union members in support of a demand that was a permissive subject of bargaining. J.A. 792, Amended Conclusions of Law 5(1) and (3). We grant the petition for review and deny the cross-petition for enforcement as to direct dealing. J.A. 792, Amended Conclusion of Law 5(2). And we deny the petition for review and grant the cross-petition for enforcement as to Tecnocap's discouragement of union membership in how it undertook the lockout. J.A. 804, Conclusions of Law 3 and 4; see 792 (adopting these conclusions without alteration). We remand the case to the NLRB for it to determine the effect our limited grounds for enforcing its order has on the remedies it ordered and for entry of a remedial order that is consistent with our decision. We dispense with oral argument because the facts and legal contentions are adequately presented in the materials before this Court and argument would not aid the decisional process.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 333\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"For the foregoing reasons, we affirm the district court's denial of Jones's motion to suppress.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 56\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Accordingly, the district court's judgments are affirmed.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 219\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Responding to late-night reports of gunfire, police officers stopped Chauncey Jones in a residential neighborhood in Washington, D.C. and seized a gun from his waistband. Jones, who had a previous felony conviction, was charged with unlawful possession of a firearm in violation of 18 U.S.C. § 922(g)(1). Before trial, he moved to suppress the gun, arguing that the officers who seized it had lacked reasonable suspicion that he was involved in criminal activity. The district court denied Jones's motion, and the case proceeded by the parties’ agreement to a bench trial on a stipulated factual record, preserving Jones’ right to appeal the denial of his motion to suppress. The court found Jones guilty, and Jones now appeals the suppression ruling. We affirm the district court's denial and hold that the officers who seized the gun had reasonable suspicion that Jones was involved in criminal activity.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 50\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"MSHA examined and tested the diesel air compressor over the next six weeks but ultimately found no evidence that it was the source of the miner's illness. During this period, MSHA initially insisted that M-Class submit an action plan governing  *21  **393 diesel air compressor use in the mine before the Order would be terminated. After MSHA rejected M-Class's submission and the parties could not agree on a plan, M-Class filed a notice of contest and moved for an expedited hearing before an ALJ. The ALJ shortly thereafter denied M-Class's expedition motion and a few days later MSHA terminated the Order. Approximately two and one-half months after terminating the Order, the Secretary moved to dismiss the case for lack of jurisdiction and mootness because the Order had been terminated. The ALJ denied the motion, concluding his jurisdiction continued and the case was not moot. After a hearing, the ALJ concluded “the Secretary ha[d] proven by a preponderance of the evidence that an accident [had] occurred and that the [terminated] Order was appropriate to ensure the safety of other miners until the investigation ... was completed.” M-Class Mining, LLC v. Sec'y of Labor, 41 FMSHRC 1, 10 (2019) (ALJ). M-Class timely petitioned the Commission for review of the ALJ's decision. In a 3–2 decision, the Commission affirmed the ALJ in part and reversed in part. The Commission majority concluded that the case was not moot but vacated the terminated Order because it determined substantial evidence did not support MSHA's finding that an accident occurred.4 The Secretary timely petitioned for review of the Commission decision.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The “capable of repetition but evading review” exception does not apply.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 16\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The district court's judgment is AFFIRMED.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 385\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Decree}",
+        "Pred_Answer": "Decree",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"In exercising its discretion under Rule 55(c), a “district court is supposed to consider ‘whether (1) the default was willful, (2) a set-aside would prejudice plaintiff, and (3) the alleged defense was meritorious.’ ” Mohamad v. Rajoub, 634 F.3d 604, 606 (D.C. Cir. 2011), aff'd sub nom. Mohamad v. Palestinian Auth., 566 U.S. 449, 132 S.Ct. 1702, 182 L.Ed.2d 720 (2012) (quoting Keegel v. Key West & Caribbean Trading Co., 627 F.2d 372, 373 (D.C. Cir. 1980). There is an interest favoring “the resolution of genuine disputes on their merits,” such that “all doubts are resolved in favor of the party seeking relief.” Jackson v. Beech, 636 F.2d 831, 835–36 (D.C. Cir. 1980). And that interest is pronounced in the context of a foreign state desiring to assert defenses based on its sovereign status. See FG Hemisphere Associates, LLC v. Democratic Republic of Congo, 447 F.3d 835, 838 (D.C. Cir. 2006).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"It was also reasonable to find Palace's confidentiality claim “legitimate on its face.” J.A. 152. True, Palace offered “no affidavit or admissible evidence” to prove confidentiality. Petitioner's Brief 22. But the Board does not require such proof. Instead, employers need only “articulate a specific confidentiality interest.” J.A. 152. Palace did so, and the Board reasonably found the claim legitimate. See Circus Circus Casinos, Inc. v. NLRB, 961 F.3d 469, 475 (D.C. Cir. 2020).4\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"As to the first argument, the evidence amply supports the district court's finding that the game was created at Klamer's expense. In general, the expense requirement looks to the parties' relative investment of resources in the work and the related financial risk. See Marvel Characters, Inc. v. Kirby, 726 F.3d 119, 140 (2d Cir. 2013) (noting that the overall purpose of the expense requirement is to “reward[ ] with ownership the party that bears the risk with respect to the work's success”). Here, Klamer promised at the outset to pay Markham any costs incurred -- regardless of whether Milton Bradley ultimately liked the game and paid for the rights. Hence, if the dinner at Chasen's had gone poorly, Klamer still would have  *84 been obligated to pay Markham's costs.5 As a result, Markham's downside was limited.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Rather than negotiating with Khochinsky, Poland opted to pursue criminal charges against him. In January 2013, a Polish court accused Khochinsky of knowingly and unlawfully purchasing Girl with Dove, and Poland issued a “Wanted Person Notice” for his arrest. Later that year, Poland submitted a request to the United States for Khochinsky's extradition. In early 2015, an Assistant United States Attorney filed a petition for a certificate of extraditability in the United States District Court for the Southern District of New York. The next day, Khochinsky was arrested and imprisoned for more than one week. Upon release, Khochinsky was subject *6  **378  to continued house arrest and electric monitoring.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"By this time, Wheeler and McCauley were out of prison. The court simply wiped the § 924(c) convictions from their records.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"At Lassiter's 2020 resentencing, the judge found that he originally designed Lassiter's sentence as a “sentencing package”: a bundle of interdependent sentences as opposed to a string of independent sentences. The judge recalled that he “had in [his] mind a 324 month sentence based upon [Lassiter's] history, [ ] background, [ ] prior convictions and [ ] conduct,” and that he “went all the way down to 240” months for kidnapping because he knew that he “was going to have to impose an 84 month consecutive sentence” for § 924(c). App. 514-15. That said, the judge praised Lassiter's participation in the prison's educational programs. The judge resentenced Lassiter to 300 months imprisonment. That added 60 months to the kidnapping count and kept the same 138 concurrent months for the D.C. assault count but reduced the total sentence by 24 months “to motivate” Lassiter to continue “to participate in [educational] programs and to improve [him]self while in prison.” App. 517-18.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Darby argues that we have jurisdiction to review the BIA's refusal to reopen because the BIA committed legal error by misconstruing her eligibility for adjustment of status. The DHS had approved the I-130 petition filed by her son, meaning Darby could apply to become a lawful permanent resident. She argues that approval of her I-130 petition means she is “actually eligible” for status adjustment, not potentially eligible. Pet'r Br. 41. The BIA's misstatement was a legal error, Darby says, because our Court has distinguished the legal status of one who is eligible for adjustment of status from one who is potentially eligible for adjustment of status. See Hashmi v. Att'y Gen., 531 F.3d 256, 260 (3d Cir. 2008).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 152\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Issue}",
+        "Pred_Answer": "Issue",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Though Brace asks us to review the injunction, he does not attack the substance of the injunction or even the grant of summary judgment. Instead, he challenges only the District Court's procedure in getting there—specifically, its order striking his summary-judgment brief. We review that sanction for abuse of discretion. Tracinda Corp. v. DaimlerChrysler AG, 502 F.3d 212, 237 (3d Cir. 2007). And here, the District Court's sanction was eminently reasonable.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 137\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Decree",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The parties subsequently entered into two agreements regarding rights to the game. The first was a license agreement between Link Research and Milton Bradley. It gave Milton Bradley the exclusive right to make and sell the game and noted that Link Research “ha[d] had ... [the game] designed and constructed.” The license agreement also gave Milton Bradley the right to use Linkletter's name and image in promoting the game. In exchange, Link Research would receive a six percent royalty on sales, including a $5,000 non-refundable advance. The second was an assignment agreement between Link Research and Markham. Stating that Markham had “invented, designed[,] and developed [the] game,” it assigned “all of [Markham's] right, title[,] and interest in and to the Game[ ] to LINK.” In exchange, it gave Markham thirty percent of Link Research's six percent royalty, including a $773.05 non-refundable advance. It also noted that Markham would be paid $2,423.16 to cover the costs of producing the prototype. In fact, Klamer had agreed at the beginning of the project to cover Markham's costs, and Markham had already billed Link Research for his expenses (including the salaries of Chambers and Israel and the cost of the materials used to create the prototype). Klamer ultimately paid Markham's bill from the $5,000 Milton Bradley advance.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Facts",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"He is wrong both as to what Rule 32(h) requires and as to what notice he received.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 87\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The judge sentenced Wheeler and McCauley to 121 months imprisonment each: 37 months for kidnapping plus 84 consecutive months for § 924(c). Their lower sentences reflected their relatively smaller roles and their cooperation at the time of sentencing.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We agree with the district court that this language is best read not as a reservation in Markham, but as a kind of failsafe for Link. That is, it makes clear that if, contrary to expectations, Markham were entitled to the copyright in the game, he would, at Link's request, assign it over. See Marvel Characters, 726 F.3d at 143 (suggesting that a freelancer's assignments could be “redundancies insisted upon by [the hiring party] to protect its rights” rather than an indication that the  *86 hiring party “did not already own the rights”). This reading is supported by the tentative, open-ended language (“to which he may be entitled,” “any such copyright”) (emphasis added), which appears to be an attempt to cover all conceivable bases without acknowledging that any rights actually belong to Markham. Regardless, this language is not the required “express contractual reservation of the copyright in the artist.” Lin-Brook, 352 F.2d at 300. The district court thus supportably found that the assignment agreement did not overcome the presumption that the game was a work for hire made for Klamer. As a result, Markham “never owned the copyrights to assign,” and “there are no rights the assignment of which his ... heirs may now terminate.” Marvel Characters, 726 F.3d at 137.8\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The union scoffs at all that. To test certification, it reasons, employers must break the law. And an employer who breaks the law “acts at its peril.” Petitioner's Brief 17. So the new remedy rests on a “false conflict,” and the Board was arbitrary and capricious to adopt it. Id. at 15.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 12\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"The Commission made the same point in its order denying a stay. Calling the Governance Order the “first step toward establishing a new governance structure,” the Commission accused the exchanges of “overstat[ing] the harm that [would] result from their compliance with the Governance Order,” explaining that even after they  *38  **410 submit the proposed plan, “interested parties will still be able to comment on [it], and the Commission will review the plan and may make changes or add conditions before issuing a subsequent order approving or disapproving a new plan.” Order Denying Stay, 85 Fed. Reg. at 36,921–22.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 34\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"When reviewing a district court's judgment following a bench trial, we defer to the court's findings of fact (unless clearly erroneous), but not to its legal conclusions (which we consider de novo). See Rojas-Buscaglia v. Taburno-Vasarhelyi, 897 F.3d 15, 23 (1st Cir. 2018). A more flexible standard governs so-called mixed questions of fact and law. See In re IDC Clambakes, Inc., 727 F.3d 58, 64 (1st Cir. 2013) (“The more fact intensive the question, the more deferential the level of review (though never more deferential than the 'clear error' standard); the more law intensive the question, the less deferential the level of review.”).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 75\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Rule",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Lassiter also makes much of the PSR's passing reference to Guidelines § 2A4.1(b)(3), which increases the kidnapping offense level by two “[i]f a dangerous weapon was used.” It is true that enhancement risks “double counting” if applied because of Lassiter's firearm use, that is the § 924(c) sentence already addresses that conduct. Guidelines § 2K2.4 cmt. background. However, the PSR traced this enhancement to Lassiter's boxcutter use. Anyways, this is beside the point: because § 2A4.1(b)(7) prescribed substituting the kidnapping offense level with the higher offense level for attempted first-degree murder causing life-threatening bodily injury, the district judge never actually applied § 2A4.1(b)(3).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We afford de novo review both to the district court's denial of the motion to remand and to its subsequent entry of judgment on the pleadings. See Rueli v. Baystate Health, Inc., 835 F.3d 53, 62 (1st Cir. 2016). In this instance, our review takes place against the background principle that section 301 of the LMRA, see 29 U.S.C. § 185(a), completely preempts any state-law cause of action “founded directly on rights created by collective-bargaining agreements” or “substantially dependent on analysis of a collective-bargaining agreement.” Caterpillar, 482 U.S. at 394, 107 S.Ct. 2425; see Franchise Tax Bd. of Cal. v. Constr. Laborers Vacation Tr. for S. Cal., 463 U.S. 1, 23, 103 S.Ct. 2841, 77 L.Ed.2d 420 (1983).\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 56\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Issue",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"At Lassiter's resentencing, the sentencing judge incorporated his guidelines analysis (including the offense-level calculation) from the original sentencing. Indeed, the judge only mentioned the updated PSR in passing. The judge did, however, reconnect the boxcutter slashing with Lyles's bodily injuries: [You t]ried to shoot one of your co-conspirators in crime, tried to kill Mr. Lyles and the gun didn't work. You went and got a box cutter and used it. **** And Mr. Lyles lay there in the back of the car bleeding with all of these cuts all over his body pretending to be dead. I remember him being here in Court on numerous occasions during status conferences and other proceedings, it's amazing that he was alive. App. 514.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 25\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Facts}",
+        "Pred_Answer": "Facts",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 0,
+            "em": 0,
+            "f1": 0,
+            "math_equal": false
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Here, the district court addressed the three primary considerations, finding that Poland's default was the result of confusion rather than willfulness, that Poland's defense of sovereign immunity was meritorious, and that Khochinsky suffered no prejudice from vacatur of the default. Khochinsky primarily attacks the district court's finding as to a lack of willfulness. But “[e]ven when a default is willful, a district court does not necessarily abuse its discretion by vacating a default when the asserted defense is meritorious and the district court took steps to mitigate any prejudice to the non-defaulting party.” Gilmore, 843 F.3d at 966. That is the case here.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Analysis",
+        "Output": "\\boxed{Analysis}",
+        "Pred_Answer": "Analysis",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"Four months later, the Commission published a modified version of the proposed order, referred to as the Governance Order. See Order Directing the Exchanges and the Financial Industry Regulatory Authority To Submit a New National Market System Plan Regarding Consolidated Equity Market Data (“Governance Order”), 85 Fed. Reg. 28,702 (May 13, 2020). Over the objections of several stock exchanges, the Commission required the forthcoming proposal to include, among other things, three specific features: (1) “voting representation” on the “New Consolidated Data Plan's operating committee” for certain non-exchange stakeholders; (2) a “voting rights” allocation that treats a group of affiliated exchanges as if it were one exchange; and (3) an “independent plan administrator” neither “owned [n]or controlled by a corporate entity that, either directly or via another subsidiary, offers for sale its own proprietary market data product for NMS stocks.” Id. at 28,712, 28,714, 28,730.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 34\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Procedural History",
+        "Output": "\\boxed{Procedural History}",
+        "Pred_Answer": "Procedural History",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    },
+    {
+        "Question": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlease answer the following multiple-choice question. You should think step by step to solve it.\n\nProvide your final answer in the format \\boxed{YOUR_ANSWER}. DO NOT include any other answer content.\n\nQuestion:\nClassify the function of the following paragraph from a legal written opinion. The paragraph is: \"We thus find no abuse of discretion in the district court's vacatur of the default.\" What is the function of this paragraph?\n\nChoices:\nFacts\nProcedural History\nIssue\nRule\nAnalysis\nConclusion\nDecree\n\nCitation: 1 F.4th 1\n\n<|im_end|>\n<|im_start|>assistant\n",
+        "Correct Choice": "Conclusion",
+        "Output": "\\boxed{Conclusion}",
+        "Pred_Answer": "Conclusion",
+        "Metrics": {
+            "is_valid_answer": true,
+            "acc": 1,
+            "em": 1,
+            "f1": 1.0,
+            "math_equal": true
+        }
+    }
+]

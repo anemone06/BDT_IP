@@ -129,7 +129,7 @@ python scripts/run_naive_rag.py \
     --use_jina True \
     --model_path "YOUR_MODEL_PATH" \
     --jina_api_key "YOUR_JINA_API_KEY" \
-    --bing_subscription_key "YOUR_BING_SUBSCRIPTION_KEY"
+    --serphouse_api_key "YOUR_SERPRHOUSE_API_KEY"
 ```
 
 3. **RAG with Agentic Search**
@@ -144,7 +144,7 @@ python scripts/run_rag_agent.py \
     --use_jina True \
     --model_path "YOUR_MODEL_PATH" \
     --jina_api_key "YOUR_JINA_API_KEY" \
-    --bing_subscription_key "YOUR_BING_SUBSCRIPTION_KEY"
+    --serphouse_api_key "YOUR_SERPRHOUSE_API_KEY"
 ```
 
 4. **Search-o1 (Ours)**
@@ -159,14 +159,14 @@ python scripts/run_search_o1.py \
     --use_jina True \
     --model_path "YOUR_MODEL_PATH" \
     --jina_api_key "YOUR_JINA_API_KEY" \
-    --bing_subscription_key "YOUR_BING_SUBSCRIPTION_KEY"
+    --serphouse_api_key "YOUR_SERPRHOUSE_API_KEY"
 ```
 
 **Parameters Explanation:**
 - `--dataset_name`: Name of the dataset to use (e.g., gpqa, aime).
 - `--split`: Data split to run (e.g., train, test, diamond).
 - `--model_path`: Path to the pre-trained LRM model.
-- `--bing_subscription_key`: Your Bing Search API subscription key.
+- `--serphouse_api_key`: Your Serphouse API subscription key.
 - `--max_search_limit`: Maximum number of search queries per reasoning session.
 - `--max_url_fetch`: Maximum number of URLs to fetch per search.
 - `--max_turn`: Maximum number of reasoning turns.
@@ -175,7 +175,7 @@ python scripts/run_search_o1.py \
 - `--use_jina`: Whether to use Jina for document processing.
 - `--jina_api_key`: Your Jina API subscription key for URL content fetching.
 
-Ensure you replace `"YOUR_MODEL_PATH"` with your actual model path, replace `"YOUR_BING_SUBSCRIPTION_KEY"` and `"YOUR_JINA_API_KEY"` with your Bing Search and Jina API key.
+Ensure you replace `"YOUR_MODEL_PATH"` with your actual model path, replace `"YOUR_SERPRHOUSE_API_KEY"` and `"YOUR_JINA_API_KEY"` with your Serphouse and Jina API keys.
 
 ### Evaluation
 

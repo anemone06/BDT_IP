@@ -1,0 +1,11 @@
+{
+    "overall": {
+        "em": 0.53,
+        "acc": 0.53,
+        "f1": 0.53,
+        "math_equal": 0.53,
+        "num_valid_answer": "100 of 100",
+        "query_latency": "421 ms",
+        "balanced_accuracy": 0.5346611721611721
+    }
+}

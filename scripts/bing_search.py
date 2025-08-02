@@ -181,44 +181,56 @@ def fetch_page_content(urls, max_workers=32, use_jina=False, jina_api_key=None, 
     return results
 
 
-def bing_web_search(query, subscription_key, endpoint, market='en-US', language='en', timeout=20):
+def bing_web_search(query, subscription_key, endpoint='https://google.serper.dev/search', market='en-US', language='en', timeout=20):
     """
-    Perform a search using the Bing Web Search API with a set timeout.
-
+    Web search using Serper.dev API (Google Search API)
+    
     Args:
-        query (str): Search query.
-        subscription_key (str): Subscription key for the Bing Search API.
-        endpoint (str): Endpoint for the Bing Search API.
-        market (str): Market, e.g., "en-US" or "zh-CN".
-        language (str): Language of the results, e.g., "en".
-        timeout (int or float or tuple): Request timeout in seconds.
-                                         Can be a float representing the total timeout,
-                                         or a tuple (connect timeout, read timeout).
-
+        query (str): Search query
+        subscription_key (str): Serper.dev API key
+        endpoint (str): API endpoint (default: Serper.dev)
+        market (str): Market/region
+        language (str): Language code
+        timeout (int): Request timeout in seconds
+    
     Returns:
-        dict: JSON response of the search results. Returns None or raises an exception if the request times out.
+        dict: Search results in compatible format
     """
     headers = {
-        "Ocp-Apim-Subscription-Key": subscription_key
+        'X-API-KEY': subscription_key,
+        'Content-Type': 'application/json'
     }
-    params = {
-        "q": query,
-        "mkt": market,
-        "setLang": language,
-        "textDecorations": True,
-        "textFormat": "HTML"
+    payload = {
+        'q': query,
+        'gl': 'us',  # Country
+        'hl': language,  # Language
+        'num': 10  # Number of results
     }
 
     try:
-        response = requests.get(endpoint, headers=headers, params=params, timeout=timeout)
-        response.raise_for_status()  # Raise exception if the request failed
+        response = requests.post(endpoint, headers=headers, json=payload, timeout=timeout)
+        response.raise_for_status()
         search_results = response.json()
-        return search_results
+        
+        # Convert Serper.dev format to compatible format
+        results = {}
+        if 'organic' in search_results:
+            results['organic'] = []
+            for item in search_results['organic']:
+                result_item = {
+                    'title': item.get('title', ''),
+                    'link': item.get('link', ''),
+                    'snippet': item.get('snippet', ''),
+                    'position': item.get('position', 0)
+                }
+                results['organic'].append(result_item)
+        
+        return results
     except Timeout:
-        print(f"Bing Web Search request timed out ({timeout} seconds) for query: {query}")
-        return {}  # Or you can choose to raise an exception
+        print(f'Serper.dev Search request timed out ({timeout} seconds) for query: {query}')
+        return {}
     except requests.exceptions.RequestException as e:
-        print(f"Error occurred during Bing Web Search request: {e}")
+        print(f'Error occurred during Serper.dev Search request: {e}')
         return {}
 
 
@@ -254,28 +266,18 @@ def extract_pdf_text(url):
         return f"Error: {str(e)}"
 
 def extract_relevant_info(search_results):
-    """
-    Extract relevant information from Bing search results.
-
-    Args:
-        search_results (dict): JSON response from the Bing Web Search API.
-
-    Returns:
-        list: A list of dictionaries containing the extracted information.
-    """
     useful_info = []
     
-    if 'webPages' in search_results and 'value' in search_results['webPages']:
-        for id, result in enumerate(search_results['webPages']['value']):
+    if 'organic' in search_results:
+        for id, result in enumerate(search_results['organic']):
             info = {
-                'id': id + 1,  # Increment id for easier subsequent operations
-                'title': result.get('name', ''),
-                'url': result.get('url', ''),
-                'site_name': result.get('siteName', ''),
-                'date': result.get('datePublished', '').split('T')[0],
-                'snippet': result.get('snippet', ''),  # Remove HTML tags
-                # Add context content to the information
-                'context': ''  # Reserved field to be filled later
+                'id': id + 1,
+                'title': result.get('title', ''),
+                'url': result.get('link', ''),
+                'site_name': result.get('domain', ''),
+                'date': result.get('date', '').split('T')[0] if 'date' in result else '',
+                'snippet': result.get('snippet', ''),
+                'context': ''
             }
             useful_info.append(info)
     
@@ -290,11 +292,11 @@ if __name__ == "__main__":
     query = "Structure of dimethyl fumarate"
     
     # Subscription key and endpoint for Bing Search API
-    BING_SUBSCRIPTION_KEY = "YOUR_BING_SUBSCRIPTION_KEY"
+    BING_SUBSCRIPTION_KEY = 'YOUR_SERPER_API_KEY'
     if not BING_SUBSCRIPTION_KEY:
-        raise ValueError("Please set the BING_SEARCH_V7_SUBSCRIPTION_KEY environment variable.")
+        raise ValueError('Please set the SERPER_API_KEY environment variable.')
     
-    bing_endpoint = "https://api.bing.microsoft.com/v7.0/search"
+    bing_endpoint = 'https://google.serper.dev/search'
     
     # Perform the search
     print("Performing Bing Web Search...")
